@@ -24,5 +24,20 @@
 	<p> This is Oliver in my free time I like to code and play minecraft</p>
 	<p> My dad is helping me create this website, this is my first on and its so fun! </p>
 	<p> I am makeing my first website. I have coded before, at that time I was using Ruby Rails. Thats a little harder then this but now I can say I have experience. My dad helps me he works at cerner, so he is really good at coding!</p>
+	<img id="display-image" onclick="swapImage()" src="images/NINJA_RED.png" width="180" height="180"/>
+    <script>
+    	function swapImage() {
+    		var imageDisplayed = document.getElementById('display-image');
+    		if (imageDisplayed.src.match("images/NINJA_GREEN.png")){
+    			imageDisplayed.src = "images/NINJA_BLUE.png";
+    		}
+    		else if (imageDisplayed.src.match("images/NINJA_BLUE.png")){
+    			imageDisplayed.src = "images/NINJA_RED.png";
+    		}
+    		else{
+    			imageDisplayed.src = "images/NINJA_GREEN.png";
+    		}
+    	}
+    </script>
 </body>
 </html>
