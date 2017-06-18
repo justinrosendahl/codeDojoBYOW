@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>About Us</title>
+meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About us</title>
+<!--link type="text/css" rel="stylesheet" href="css/my-first-stylesheet.css"/-->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 
+
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="theme.css" rel="stylesheet">
+   <link href="bootstrap.css" rel="stylesheet">
 </head>
-<link type="text/css" rel="stylesheet" href="css/my-first-stylesheet.css"/>
+
 <body>
-	<nav>
-		<ul> 
-			<li><a href="index.html">Home</a></li>
-			<li class="selected">About Us</a></li>
-			<li><a href="all-songs.html"> Minecraft Tips</a></li>
+      <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bootstrap theme</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="all-songs.html"> Minecraft Tips</a></li>
 			<li><a href="see-us-play.html">Coding Time</a></li>
-			<li><a href="fun-minecraft-multiplayer-servers.html">Minecraft Servers</a></li>
+            <li><a href= "Fun-Minecraft-multiplayer-servers.html">Minecraft Servers</a></li>
 			<li><a href="origami-fun.html">Origami Fun</a></li>
 			<li><a href="coding-club.html">Coding Club</a></li>
-		</ul>
-	</nav>
-	<h1>About Us</h1>
-	<p><img src="images/Coder Dojo Badge.png" alt="Picture of the Nanonauts"/></p>
-	<p>We are the Rosendahl's</p>
-	<p>Are names are Justin, Jennifer, Abigail, Oliver, Eli, and Avery</p>
-	<p>Page designed by <strong>Oliver</strong></p>
-	<p> This is Oliver in my free time I like to code and play minecraft</p>
-	<p> My dad is helping me create this website, this is my first on and its so fun! </p>
-	<p> I am makeing my first website. I have coded before, at that time I was using Ruby Rails. Thats a little harder then this but now I can say I have experience. My dad helps me he works at cerner, so he is really good at coding!</p>
-	<img id="display-image" onclick="swapImage()" src="images/NINJA_RED.png" width="180" height="180"/>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container theme-showcase" role="main">
+    <div class="jumbotron">
+	<h1> We are the  Rosendahl's </h1>
+	<p> This is our website. Click on a link to visit a page:</p>
+	</div>
+	</div>
+  	<div class="container">
+		<h1>About Us</h1>
+		<p><img src="images/Coder Dojo Badge.png" alt="Picture of the Nanonauts"/></p>
+		<p>We are the Rosendahl's</p>
+		<p>Are names are Justin, Jennifer, Abigail, Oliver, Eli, and Avery</p>
+		<p>Page designed by <strong>Oliver</strong></p>
+		<p> This is Oliver in my free time I like to code and play minecraft</p>
+		<p> My dad is helping me create this website, this is my first on and its so fun! </p>
+		<p> I am makeing my first website. I have coded before, at that time I was using Ruby Rails. Thats a little harder then this but now I can say I have experience. My dad helps me he works at cerner, so he is really good at coding!</p>
+		<img id="display-image" onclick="swapImage()" src="images/NINJA_RED.png" width="180" height="180"/>
+	</div>
     <script>
     	function swapImage() {
     		var imageDisplayed = document.getElementById('display-image');
@@ -39,5 +74,14 @@
     		}
     	}
     </script>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>	
 </body>
 </html>
