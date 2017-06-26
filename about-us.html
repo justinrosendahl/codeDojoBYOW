@@ -16,28 +16,45 @@
 			<li><a href="coding-club.html">Coding Club</a></li>
 		</ul>
 	</nav>
-	<h1>About Us</h1>
-	<p><img src="images/Coder Dojo Badge.png" alt="Picture of the Nanonauts"/></p>
-	<p>We are the Rosendahl's</p>
-	<p>Are names are Justin, Jennifer, Abigail, Oliver, Eli, and Avery</p>
-	<p>Page designed by <strong>Oliver</strong></p>
-	<p> This is Oliver in my free time I like to code and play minecraft</p>
-	<p> My dad is helping me create this website, this is my first on and its so fun! </p>
-	<p> I am makeing my first website. I have coded before, at that time I was using Ruby Rails. Thats a little harder then this but now I can say I have experience. My dad helps me he works at cerner, so he is really good at coding!</p>
-	<img id="display-image" onclick="swapImage()" src="images/NINJA_RED.png" width="180" height="180"/>
-    <script>
-    	function swapImage() {
-    		var imageDisplayed = document.getElementById('display-image');
-    		if (imageDisplayed.src.match("images/NINJA_GREEN.png")){
-    			imageDisplayed.src = "images/NINJA_BLUE.png";
-    		}
-    		else if (imageDisplayed.src.match("images/NINJA_BLUE.png")){
-    			imageDisplayed.src = "images/NINJA_RED.png";
-    		}
-    		else{
-    			imageDisplayed.src = "images/NINJA_GREEN.png";
-    		}
-    	}
-    </script>
+	<div class="main">
+		<h1>About Us</h1>
+		<p><img src="images/Coder Dojo Badge.png" alt="Picture of the Nanonauts"/></p>
+		<p>We are the Rosendahl's</p>
+		<p>Are names are Justin, Jennifer, Abigail, Oliver, Eli, and Avery</p>
+		<p>Page designed by <strong>Oliver</strong></p>
+		<p> This is Oliver in my free time I like to code and play minecraft</p>
+		<p> My dad is helping me create this website, this is my first on and its so fun! </p>
+		<p> I am makeing my first website. I have coded before, at that time I was using Ruby Rails.<br> Thats a little harder then this but now I can say I have experience. My dad helps me he<br> works at cerner, so he is really good at coding!</p>
+		<img id="display-image" onclick="swapImage()" src="images/NINJA_RED.png" width="180" height="180"/>
+	    <script>
+	    	function swapImage() {
+	    		var imageDisplayed = document.getElementById('display-image');
+	    		if (imageDisplayed.src.match("images/NINJA_GREEN.png")){
+	    			imageDisplayed.src = "images/NINJA_BLUE.png";
+	    		}
+	    		else if (imageDisplayed.src.match("images/NINJA_BLUE.png")){
+	    			imageDisplayed.src = "images/NINJA_RED.png";
+	    		}
+	    		else{
+	    			imageDisplayed.src = "images/NINJA_GREEN.png";
+	    		}
+	    	}
+	    </script>
+	    <section>
+	    	<aside>
+	    	   <h2>Make sure to check out minecraft tips</h2>
+	    	   <p>It could make you great It could make you great. Just read. Have fun winning.</p>
+	    	</aside>
+	    </section>
+		<section>
+			<aside>
+				<h2>Coding Time </h2>
+				<p>Find out how I started to code and what I'm doing next.</p>
+			</aside>
+		</section>
+	</div>
+	<footer>
+		<font size="1"> <p>Tomcats Awesome server</p> </font> 
+	</footer>
 </body>
 </html>
