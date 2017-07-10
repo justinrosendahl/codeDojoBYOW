@@ -1,12 +1,12 @@
 body {
-	font-family:fantasy;
+	font-family: fantasy;
 	background-color:gold;
 	margin-left: auto;
 	margin-right: auto;
 	max-width:1024px;
 	min-width: 256px;
 	padding-top:8px;
-	padding-bottom:400px;
+	padding-bottom:97%;
 	padding-left:24px;
 	padding-right:24px;
 }
@@ -46,9 +46,9 @@ nav ul li a:hover{
 	text-decoration: underline;
 	color: purple;
 }
-
+/* the original background was blue 25% yellow 50% green 25%*/
 html {
-	background: repeating-radial-gradient(circle, blue 25%, yellow 50%, green 25%);
+	background: repeating-radial-gradient(circle, blue 30%, yellow 45%, purple 25%);
 	background-size: 80px, 80px;
 }
 table{
@@ -76,28 +76,109 @@ box-sizing: inherit;
 html{
 background-color: gold;
 }
-body{
- background-color: gold;
-}
+
 header{
  background-color: red;      
 }
+header p {
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 0px;
+}
+header h1{
+	font-size: 16px;
+	text-align: right;
+}
+
+footer p.copyright{
+	float:left;
+	margin-top: 0px;
+}
+
+footer p.contact {
+	text-align: right;
+}
+
 nav{
 	background-color: orange;
 }
+/*
 article{
-background-color: darkred;
-}
+	background-color: gold;
+}*/
+
 section{
-background-color: darkorange;
+	background-color: darkorange;
 }
-aside{
-	background-color: orange;
+
+/*aside{
+	background-color: orangered;
+	float: right;
+	padding-left: 24px;
+}*/
+
+
+
+section{
+ background-color: orange;
+ margin-bottom: 24px;
+ min-height: 320px;
+ padding-left: 24px;
+ padding-right: 24px;
+ border-radius: 10px;
+ }
+
+img .small{
+float: left;
+height: 200px;
+margin-bottom: 24px;
+margin-right: 24px;
 }
-footer{
+img .medium {
+max-width: 360px;
+width: 50%;
+}
+img .large{
+	width: 100%;
+}
+body , section img{
+	border:2px solid #B1B1B1;
+	border-radius: 16px;
+}
+@media all and  (min-width: 900px) {
+/*	div .main{
+		border-radius: 10px;
+		background-color: orangered;
+		float: left;
+		padding-left: 24px;
+	}*/
+	article{
+		border-radius: 10px;
+		background-color: gold;
+		float: left;
+		padding-left: 24px;
+		width: 64%
+	}
+	aside {
+		border-radius: 10px;
+		float: right;
+		padding-left: 24px;
+		padding-right: 24px;
+		width: 34%;
+		background-color: orangered ;
+	}
+
+}   
+
+body footer{
+	clear: both;
 	background-color:#B22222;
 	position: fixed;
 	top: 97%;
 	float: left;
-	width: 70%
+	padding-left: 0px;
+	border-left: 0px;
+	width: 100%;
+	left: 0px;
 }
