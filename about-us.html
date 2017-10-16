@@ -1,17 +1,80 @@
 <!DOCTYPE html>
+<!-- edited -->
 <html>
 <head>
-<title>About Us</title>
+<title> About Us</title>
 </head>
 <link type="text/css" rel="stylesheet" href="css/my-first-stylesheet.css"/>
 <body>
-	<h1>About Us</h1>
-	<p><img src="images/Coder Dojo Badge.png" alt="Picture of the Nanonauts"/></p>
-	<p>We are the Rosendahl's</p>
-	<p>Are names are Justin, Jennifer, Abigail, Oliver, Eli, and Avery</p>
-	<p>Page designed by <strong>Oliver</strong></p>
-	<p> This is Oliver in my free time I like to code and play minecraft</p>
-	<p> My dad is helping me create this website, this is my first on and its so fun! </p>
-	<p> I am makeing my first website. I have coded before, at that time I was using Ruby Rails. Thats a little harder then this but now I can say I have experience. My dad helps me he works at cerner, so he is really good at coding!</p>
+	<nav>
+		<ul> 
+			<li><a href="index.html">Home</a></li>
+			<li class="selected">About Us</a></li>
+			<li><a href="all-songs.html"> Minecraft Tips</a></li>
+			<li><a href="see-us-play.html">Coding Time</a></li>
+			<li><a href="fun-minecraft-multiplayer-servers.html">Minecraft Servers</a></li>
+			<li><a href="origami-fun.html">Origami Fun</a></li>
+			<li><a href="coding-club.html">Coding Club</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+		<article>
+		<h1>About Us</h1>
+		<p><img src="images/Coder Dojo Badge.png" alt="Picture of the Nanonauts"/></p>
+		<p>We are the Rosendahl's</p>
+			<p>Our names are Justin, Jennifer, Abigail, Oliver, Eli, and Avery</p>
+			<p>Page designed by <strong>Oliver</strong></p>
+			<p> This is Oliver...in my free time I like to code and play minecraft</p>
+			<p> My dad is helping me create this website. This is my first, and it's so fun! </p>
+			<p> This is my first website. I have coded before, at that time I was using Ruby Rails.<br> Thats a little harder than this, but now I can say I have experience. My dad helps me. He<br> works at Cerner, so he is really good at coding!</p>
+			<h2> This is my javascript ninja. Click to change it. </h2>
+			<img id="display-image" onclick="swapImage()" src="images/NINJA_RED.png" width="180" height="180"/>
+		</article>
+
+	    <aside>
+	    	<section>
+	    		<h2>Minecraft Tips</h2>
+	    	   	<p>It could make you great. Just read. Have fun winning.</p>
+	    	</section>
+	    	<section>
+				<h2>Coding Time </h2>
+				<p>Find out how I started to code and what I'm doing next.</p>
+			</section>
+		</aside>
+
+	</div>	
+
+	<footer>
+		<font size="1"> <p>Tomcats Awesome server</p> </font> 
+	</footer>
 </body>
+	    <script>
+	    	function swapImage() {
+	    		var imageDisplayed = document.getElementById('display-image');
+	    		if (imageDisplayed.src.match("images/NINJA_GREEN.png")){
+	    			imageDisplayed.src = "images/NINJA_BLUE.png";
+	    		}
+	    		else if (imageDisplayed.src.match("images/NINJA_BLUE.png")){
+	    			imageDisplayed.src = "images/NINJA_RED.png";
+	    		}
+	    		else{
+	    			imageDisplayed.src = "images/NINJA_GREEN.png";
+	    		}
+	    	}
+	    </script>
+	    <article>
+	    <button type="button" onclick="alert('I JUST HACKED YOU HA HA!!!!!!!')">click me!</button>
+      
+
+  <form action="/action_page.php" id="usrform">
+  Name: <input type="text" name="usrname">
+  <input type="submit">
+</form>
+<br>
+<textarea rows="4" cols="50" name="comment" form="usrform">
+Enter text here...</textarea>
+  </article>
 </html>
+
+
+
