@@ -4,8 +4,40 @@
 <head>
 <title> About Us</title>
 </head>
-<link type="text/css" rel="stylesheet" href="css/my-first-stylesheet.css"/>
-<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	
+	<body>
+
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	      <a class="navbar-brand" href="#">Tomcat's Page!</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+	        <ul class="navbar-nav mr-auto">
+	          <li class="nav-item">
+	            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+	          </li>
+	          <li class="nav-item active">
+	            <a class="nav-link" href="about-us.html">About Us</a>
+	          </li>
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+	            <div class="dropdown-menu" aria-labelledby="dropdown01">
+		            <a class="dropdown-item" href="all-songs.html"> Minecraft Tips</a>
+		            <a class="dropdown-item" href="all-songs.html"> Minecraft Tips</a>
+		            <a class="dropdown-item" href="see-us-play.html">Coding Time</a>
+		            <a class="dropdown-item" href="fun-minecraft-multiplayer-servers.html">Minecraft Servers</a>
+		            <a class="dropdown-item" href="origami-fun.html">Origami Fun</a>
+		            <a class="dropdown-item" href="coding-club.html">Coding Club</a>
+	             </div>
+	          </li>
+	        </ul>
+	      </div>
+	    </nav>
+
+<!-- <body>
 	<nav>
 		<ul> 
 			<li><a href="index.html">Home</a></li>
@@ -17,7 +49,7 @@
 			<li><a href="coding-club.html">Coding Club</a></li>
 		</ul>
 	</nav>
-	<div class="main">
+ -->	<div class="container">
 		<article>
 		<h1>About Us</h1>
 		<p><img src="images/Coder Dojo Badge.png" alt="Picture of the Nanonauts"/></p>
@@ -41,13 +73,19 @@
 				<p>Find out how I started to code and what I'm doing next.</p>
 			</section>
 		</aside>
-
+		<article>
+	    	<button type="button" onclick="alert('I JUST HACKED YOU HA HA!!!!!!!')">click me!</button>
+  		</article>
+	
 	</div>	
-
 	<footer>
 		<font size="1"> <p>Tomcats Awesome server</p> </font> 
 	</footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 	    <script>
 	    	function swapImage() {
 	    		var imageDisplayed = document.getElementById('display-image');
@@ -62,18 +100,7 @@
 	    		}
 	    	}
 	    </script>
-	    <article>
-	    <button type="button" onclick="alert('I JUST HACKED YOU HA HA!!!!!!!')">click me!</button>
-      
 
-  <form action="/action_page.php" id="usrform">
-  Name: <input type="text" name="usrname">
-  <input type="submit">
-</form>
-<br>
-<textarea rows="4" cols="50" name="comment" form="usrform">
-Enter text here...</textarea>
-  </article>
 </html>
 
 
